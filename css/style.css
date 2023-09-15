@@ -21,15 +21,16 @@ header {
   display: flex;
   min-height: 120px;
   align-items: center;
-  border: 1px solid #212529;
-  background-color: #212529;
+  background-color: var(--secondary-bg-color);
   padding: 10px 0; 
 }
 
 .headerlogo {
   width: 200px; 
   height: auto; 
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 80px;
+
 }
 
 nav {
@@ -49,7 +50,7 @@ ul {
 }
 
 li, a {
-  color: #ae9a63;
+  color: var(--secondary-text-color);
   text-decoration: none;
   padding: 0 15px; 
   text-transform: uppercase;
@@ -57,7 +58,7 @@ li, a {
 }
 
 li:hover {
-  color: white;
+  color: var(--main-text-color);
   transition: all 0.3s ease; 
 }
 
@@ -66,7 +67,7 @@ li:hover {
   color: #212529;
   width: 120px;
   height: 60px;
-  color: white;
+  color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -93,8 +94,8 @@ li:hover {
 
 #mainpicture {
   grid-column: 1/13;
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
  
 }
 
