@@ -12,16 +12,12 @@ footer {
   border: 1px solid #333;
 }
 
-header {
-    grid-column: 1/13;
-}
-
 #mainpicture {
   grid-column: 1/-1;
 }
 
 #description {
-    grid-column: 1/-1;
+  grid-column: 1/-1;
 }
 
 #offer1 {
@@ -41,18 +37,4 @@ header {
 }
 #offer6 {
   grid-column: ;
-}
-#offer7 {
-  grid-column: ;
-}
-
-footer {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.footer-section {
-  margin: 10px;
-  border: 1px solid #333;
 }
