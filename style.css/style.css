@@ -15,6 +15,11 @@ footer {
 }
 
 header {
+    grid-column: 1/13;
+}
+
+
+#offer1 {
   grid-column: 1/-1;
 }
 
