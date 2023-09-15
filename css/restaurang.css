@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 #container {
   width: 100%;
   margin: 0 auto;
@@ -18,12 +23,13 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-#mainpicture {
-  grid-column: 2/-2;
+#mainpicture{
+  grid-column: 1/-1;
+  text-align: center;
 }
 
-#description {
-  grid-column: 2/-2;
+#mainpicture img{
+  width: 100%;
 }
 
 #offer1 {
