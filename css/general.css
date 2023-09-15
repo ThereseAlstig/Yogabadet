@@ -1,16 +1,24 @@
+:root {
+  --main-bg-color: #4c4f53;
+  --secondary-bg-color:#212529;
+  --main-text-color: antiquewhite;
+  --secondary-text-color: #ae9a63;
+}
+
+
 body{
 
-  background-color: #4c4f53;
-  color:antiquewhite;
-  font-family: "PT Serif", sans-serif; 
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "PT-Serif"; 
 
 }
 
 
 header {
   grid-column: 1/-1;
-  background-color: #212529;
-  color: #ae9a63;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
   font-family: "Alice", sans-serif;
 }
 
