@@ -41,3 +41,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.footer-section {
+    margin: 10px;
+    border: 1px solid #333;
+}
