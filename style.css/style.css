@@ -1,0 +1,14 @@
+header,
+section,
+main,
+footer {
+    min-height: 150px;
+    border: 1px solid #333;
+}
+
+footer {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
