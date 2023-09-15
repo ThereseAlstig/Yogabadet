@@ -1,6 +1,31 @@
 header,
 section,
 main,
+
+#offer1{
+grid-column: 1/-1;
+}
+#offer2{
+    grid-column: 1/-1;
+
+}
+#offer3{
+    grid-column: 1/6;
+}
+#offer4{
+    grid-column: 6;
+}
+#offer5{
+    grid-column: ;
+}
+#offer6{
+    grid-column: ;
+}
+#offer7{
+    grid-column: ;
+}
+
+
 footer {
     min-height: 150px;
     border: 1px solid #333;
