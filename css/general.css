@@ -1,5 +1,21 @@
+body{
+
+  background-color: #4c4f53;
+  color:antiquewhite;
+  font-family: "PT Serif", sans-serif; 
+
+}
+
+
 header {
   grid-column: 1/-1;
+  background-color: #212529;
+  color: #ae9a63;
+  font-family: "Alice", sans-serif;
+}
+
+header:hover{
+  color: whitesmoke;
 }
 
 footer {
