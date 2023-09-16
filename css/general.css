@@ -16,8 +16,14 @@
 body{
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: "PT+Serif"; 
+  font-family: "PT Serif"; 
 }
+
+h1, h2, h3 { 
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+ }
+
 
 header {
   grid-column: 1/-1;
