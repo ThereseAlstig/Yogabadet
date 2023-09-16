@@ -26,7 +26,7 @@ h1, h2, h3 {
 
 
 header {
-  grid-column: 1/-1;
+  /* grid-column: 1/-1;
   background-color: var(--secondary-bg-color);
   color: var(--secondary-text-color);
   font-family: "Alice", sans-serif;
@@ -35,7 +35,21 @@ header {
   min-height: 120px;
   align-items: center;
   background-color: var(--secondary-bg-color);
-  padding: 10px 0; 
+  padding: 10px 0;  */
+
+  position: fixed; /* Satte position fixed på headern så den är synlig när man skrollar, fick ta bort grid-column då man tydligen inte kan kombinera dessa */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  font-family: "Alice", sans-serif;
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .headerlogo {
