@@ -118,9 +118,14 @@ main{
   opacity: 0.6;
 }
 
-/* #onepicture{ --tog bort klass*/
+
+#onepicture{
+  max-width: 100%;
+  height: auto;
+ #onepicture{ --tog bort klass*/
 #mainpicture img{
   width: 100%;
+
   box-shadow: 0 2 4px 1px rgba(11, 11, 11, 0.5);
   opacity: 0.6;
 }
