@@ -50,7 +50,6 @@ ul {
   margin: 0; 
 }
 
-/* li, a { --gamla koden*/ 
 a {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -59,7 +58,6 @@ a {
   cursor: pointer;
 }
 
-/* li:hover { --gamla koden */
 a:hover {
   color: var(--main-text-color);
   transition: all 0.3s ease; 
