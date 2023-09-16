@@ -86,7 +86,7 @@ ul {
 a {
   color: var(--secondary-text-color);
   text-decoration: none;
-  padding: 0 15px; 
+  /* padding: 0 15px;  */
   text-transform: uppercase;
   cursor: pointer;
 }

@@ -11,6 +11,7 @@
     padding: 1em;
     font-family: "Alice", sans-serif; 
     min-height: 120px;
+    flex-wrap: wrap;
   }
   
   /* .logodiv { 
