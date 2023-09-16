@@ -1,8 +1,16 @@
 :root {
+  /* GENERAL */
   --main-bg-color: #4c4f53;
   --secondary-bg-color:#212529;
   --main-text-color: antiquewhite;
   --secondary-text-color: #ae9a63;
+  /* MENU */
+  --menu-text-size: 20px;
+  --menulink-primary: #ae9a63;
+  --menulink-primary-hover: #whitesmoke;
+  /* BUTTONS */
+  --btn-primary: #ae9a63;
+  --btn-primary-hover: antiquewhite;
 }
 
 body{
