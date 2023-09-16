@@ -9,7 +9,8 @@
   /* MENU */
   --menu-text-size: 20px;
   --menulink-primary: #ae9a63;
-  --menulink-primary-hover: #whitesmoke;
+  --menulink-primary-hover: whitesmoke;
+  --menulink-active: #ffffff;
   /* BUTTONS */
   --btn-primary: #ae9a63;
   --btn-primary-hover: antiquewhite;

@@ -58,6 +58,12 @@
   .top-nav a.booking {
     color: rgb(0, 0, 0);
   }
+
+  .top-nav a.menuactive {
+    color: var(--menulink-active);
+    font-size: var(--menu-text-size);
+  }
+
   .menu-button-container {
     display: none;
     height: 100%;
