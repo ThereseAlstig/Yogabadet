@@ -14,6 +14,8 @@
   /* BUTTONS */
   --btn-primary: #ae9a63;
   --btn-primary-hover: antiquewhite;
+  --btn-booking: #ae9a63;
+  --btn-booking-hover: antiquewhite;
 }
 
 body{
@@ -133,14 +135,24 @@ a:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.btn-boka { 
+.btn-primary { 
   background-color: var(--btn-primary);
+  color: #FFF!important;
+}
+
+.btn-primary:hover { 
+  background-color: var(--btn-primary-hover);
+  color: #000000!important;
+}
+
+.btn-boka { 
+  background-color: var(--btn-booking);
   font-size: 25px!important;
   color: #FFF!important;
 }
 
 .btn-boka:hover { 
-  background-color: var(--btn-primary-hover);
+  background-color: var(--btn-booking-hover);
   font-size: 25px!important;
   color: #000000!important;
 }
