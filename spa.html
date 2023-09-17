@@ -7,71 +7,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/spa.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=PT+Sans&family=Roboto&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=PT+Serif"
     />
+    <script
+      src="https://kit.fontawesome.com/8259a2c2f3.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Spa</title>
+    <title>SPA</title>
   </head>
   <body>
     <div id="container">
       <header>
         <nav>
           <section class="top-nav">
-              <div class="logodiv">
-                <a href="index.html"><img class="headerlogo" src="assets/logo_horizontal.png" alt="Yogabadets logotyp"/></a>
-              </div>
-              <div class="menudiv">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                  <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                  <li><a href="yoga.meditation.html">Yoga och meditation</a></li>
-                  <li><a href="spa.html">Spa</a></li>
-                  <li><a href="boende.html">Boende</a></li>
-                  <li><a href="restaurang.html">Restaurang</a></li>
-                  <li><a href="behandlingar.html">Behandlingar</a></li>
-                  <li class="booking"><a href="#" class="booking">Boka</a></li>
-                </ul>
-              </div>
-              <div class="bookingdiv">
-                <a href="boka.html" class="btn btn-boka">Boka</a>
-              </div>
-            </section>
+            <div class="logodiv">
+              <a href="index.html"
+                ><img
+                  class="headerlogo"
+                  src="assets/logo_horizontal.png"
+                  alt="Yogabadets logotyp"
+              /></a>
+            </div>
+            <div class="menudiv">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+              </label>
+              <ul class="menu">
+                <li><a href="yoga.meditation.html">Yoga och meditation</a></li>
+                <li><a href="spa.html">Spa</a></li>
+                <li><a href="boende.html">Boende</a></li>
+                <li><a href="restaurang.html">Restaurang</a></li>
+                <li><a href="behandlingar.html">Behandlingar</a></li>
+                <li class="booking"><a href="#" class="booking">Boka</a></li>
+              </ul>
+            </div>
+            <div class="bookingdiv">
+              <a href="boka.html" class="btn btn-boka">Boka</a>
+            </div>
+          </section>
         </nav>
       </header>
 
       <main>
         <section id="mainpicture">
-          <img src="assets/spa-header.jpg" alt="restaurangen" />
+          <img src="assets/pool2.jpeg" alt="restaurangen" />
         </section>
 
         <section id="text-container">
-          <h1>Spa</h1>
+          <h1>Välkommen till Yogabadets spa</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            mollitia adipisci minus aspernatur aliquam ullam reprehenderit dolor
-            placeat praesentium maiores quasi, enim, recusandae corporis
-            distinctio ipsa sunt magni voluptatum. Cum assumenda voluptas, nihil
-            enim iure, quae reprehenderit labore maxime voluptatibus, repellat
-            officia animi. Facere vel est voluptatibus! Quo, eum sed?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            adipisci, maxime eveniet temporibus cum quisquam esse, mollitia
+            minima vero placeat provident, quaerat consectetur. Ad minus
+            blanditiis assumenda illo veritatis beatae veniam nihil placeat
+            eaque aspernatur. Hic reprehenderit ipsa asperiores sapiente
+            explicabo eius porro repellat. Laborum voluptas commodi dolore qui
+            excepturi.
           </p>
+        
         </section>
 
         <section class="box-1">
-          <img src="assets/pool.jpeg" alt="pool" />
+          <img src="assets/pool3.jpeg" alt="pool" />
+          <p class="text-img">Varma och kalla källor</p>
+          <!-- <button class="btn-img">Läs mer</button> -->
         </section>
-        <section class="box-2"><img src="assets/bastu.jpg" alt="" /></section>
+        <section class="box-2">
+          <img src="assets/bastu.jpeg" alt="bastu" />
+          <p class="text-img">Bastu</p>
+          <!-- <button class="btn-img">Läs mer</button> -->
+        </section>
         <section class="box-3">
-          <img src="assets/utomhusbad.jpg" alt="" />
+          <img src="assets/vila.webp" alt="Vila och avkoppling" />
+          <p class="text-img">Vila och avkoppling</p>
+          <!-- <button class="btn-img">Läs mer</button> -->
         </section>
-        <section class="box-4"><img src="assets/utomhusbad1.jpeg" alt="" /></section>
+        <section class="box-4">
+          <img src="assets/utomhusbad1.jpeg" alt="Utomhuspool" />
+          <p class="text-img">Utomhusspa</p>
+          <!-- <button class="btn-img">Läs mer</button> -->
+        </section>
 
-        <!-- <section class="offer-1">Offer 1</section>
-        <section class="offer-2">Offer 2</section>
-        <section class="offer-3">Offer 3</section> -->
+        <section class="offer-text">
+          <h1>Populära erbjudanden</h1>
+        </section>
+
+        <section class="offer-1">
+          <div class="img-container">
+            <img src="assets/frukost.jpg" alt="" />
+          </div>
+          <div class="text-div">
+            <h1>Frukost och spa</h1>
+            <p>
+              Börja dagen med en god frukost på Yogabadet och varva sedan ner i
+              varma källor och njut av bastubad.
+            </p>
+            <button class="btn-img">Boka</button>
+          </div>
+        </section>
+        <section class="offer-2">
+          <div class="img-conatiner">
+            <img src="assets/late-night-spa.jpeg" alt="" />
+          </div>
+          <div class="text-div">
+            <h1>Late night- Kvällspa</h1>
+            <p>
+              Ta med dina vänner på middag och avkoppling på Yogabadet i månens
+              sken. Går att boka fredagar och lördagar.
+            </p>
+            <button class="btn-img">Boka</button>
+          </div>
+        </section>
       </main>
 
       <footer>
