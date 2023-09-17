@@ -1,3 +1,5 @@
+@import "./boende.css"; /* Import boende css */
+
 * {
   box-sizing: border-box;
   margin: 0;
