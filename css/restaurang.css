@@ -10,12 +10,12 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-header,
+/* header,
 section,
 main,
 footer {
   border: 1px solid #333;
-}
+} */
 
 main {
   grid-column: 1/-1;
