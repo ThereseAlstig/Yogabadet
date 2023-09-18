@@ -188,21 +188,35 @@ footer section {
   display: flex;
   flex-grow: 1;
   flex-basis: 250px;
-  row-gap: 20px;
+  row-gap: 25px;
 }
 
 #googlemapspic img {
   width: 100%;
 }
 
-#kontakt {
+#kontakt a, #nyhetsbrev a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 50px;
-  background-color: #ae9a63;
+  background-color: var(--btn-primary);
+}
+
+#kontakt a {
+  padding: 10px;
   font-size: 18px;
+}
+
+#nyhetsbrev a {
+  width: 130px;
+  height: 36px;
+  font-size: 14px;
+}
+
+#kontakt a:hover,
+#nyhetsbrev a:hover {
+  background-color: var(--btn-booking-hover);
+  color: var(--secondary-bg-color);
 }
 
 #social {
@@ -219,33 +233,30 @@ section h4 {
   display: flex;
 }
 
-.news-btn {
+
+.btn-contact,
+.btn-news {
   align-items: center;
-  background-color: #ae9a63;
+  background-color: var(--btn-primary);
   border: none;
   color: #fff;
   display: flex;
-  font-size: 14px;
-  font-weight: 600;
-  height: 36px;
   justify-content: center;
 }
 
-.news-field {
-  border: 1px solid #d6d6d6;
-  color: #1a1a1d;
+.field-news {
+  border: 1px solid var(--btn-primary);
   height: 36px;
   min-width: 36px;
   padding-left: 8px;
-  position: relative;
 }
 
 .copyright {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 30px;
   width: 100%;
-  justify-content: center;
 }
 
 @media (max-width: 959px) {
