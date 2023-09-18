@@ -7,7 +7,7 @@ main {
 
 #mainpicture{
     grid-column: 1/-1;
-    text-align: center;
+    
 }
 
 #text-container {
@@ -94,3 +94,40 @@ border: none;
   background-color: antiquewhite;
     color: #212529;
 } 
+
+@media (max-width: 960px) {
+ /* main {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr)
+    gap: 20px;
+}
+.box1{
+  grid-column: 10/ -5;
+  border:none;
+        }
+  
+        .box2{
+          grid-column: 10/ -5;
+          width: 270px;
+  border: none;
+  
+        }
+  
+        .box3{
+          grid-column: 10/ -5;
+          width: 270px;
+  border: none;
+        }*/
+        main, #text-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        
+      }
+      #text-container{
+        padding:30px;
+      }
+
+}
