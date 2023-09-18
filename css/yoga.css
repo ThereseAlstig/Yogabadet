@@ -34,11 +34,11 @@ aside{
 }
 
 button{
-  background-color: #ae9a63;
-  color: #212529;
+  background-color: var(--secondary-text-color);
+  color: var(--secondary-bg-color);
   width: 120px;
   height: 50px;
-  color: var(--main-text-color);<
+  color: var(--main-text-color);
  
   font-size: 12px;
   text-transform: uppercase;
@@ -53,8 +53,8 @@ button{
  }
 
  button:hover{
-    background-color: antiquewhite;
-    color: #212529;
+    background-color: var(--btn-primary-hover);
+    color: var(--secondary-bg-color);
  }
   
 #bokapass {
@@ -125,7 +125,7 @@ cursor: pointer;
 }
 
 table, th, td{
-    border: 1px solid #ae9a63;
+    border: 2px solid #ae9a63;
     padding: 0.2%;
 }
 
