@@ -17,7 +17,12 @@
     margin: 50px;
     position: relative;
 }
-
+#Mainpicture{
+    opacity: 0.4;
+    height: auto;
+    width: 100%;
+    
+}
 
 aside{
     text-align: center;
@@ -25,7 +30,7 @@ aside{
     justify-content: flex-start;
     line-height: 1.8;
     letter-spacing: 0.2;
-    
+   
 }
 
 button{
@@ -33,7 +38,7 @@ button{
   color: #212529;
   width: 120px;
   height: 50px;
-  color: var(--main-text-color);
+  color: var(--main-text-color);<
  
   font-size: 12px;
   text-transform: uppercase;
@@ -253,13 +258,14 @@ aside {
 
     aside{
         grid-column: 3/11;
+        
       
     }
     #bokapass {
         grid-column: 11/12;
         grid-row: 1/2;
         position: absolute;
-        top: -34px; 
+        top: -54px; 
         left: -199px;
       
      }
