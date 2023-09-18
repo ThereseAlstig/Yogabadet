@@ -12,15 +12,20 @@ main {
 
 #text-container {
     grid-column: 1/ 13;
+    grid-row: 2 / 13;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
     font-family: 'PT serif';
-    font-size: 18px;
     text-align: center;
     background-color: #212429;
+color: white;
+}
+
+p{
+max-width: 800px;
 color: white;
 }
 
@@ -33,7 +38,7 @@ color: white;
       .box1{
 grid-column: 3/ 5;
 width: 270px;
-border: none;
+border:none;
       }
 
       .box2{
@@ -44,7 +49,7 @@ border: none;
       }
 
       .box3{
-        grid-column: 9 / 11;
+        grid-column: 9/ 11;
         width: 270px;
 border: none;
       }
@@ -53,7 +58,9 @@ border: none;
         width: 100%;
         height:auto;
       }
-
+.pbox{
+  font-size: 16px;
+}
       a:hover {
         color: white; 
         transition: all 0.3s ease; 
@@ -62,5 +69,28 @@ border: none;
       h2, a{
         display: flex;
        justify-content: center;
-       background-color: #212429;
+       
       }
+
+      .btn-img {
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        padding:5px;
+        margin:5px;
+        border:none;
+        display: inline;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: #ae9a63;
+        color:antiquewhite;
+        font-family: 'Roboto';
+        cursor: pointer; 
+        }
+  
+
+.btn-img:hover {
+  color:white;
+  background-color: antiquewhite;
+    color: #212529;
+} 
