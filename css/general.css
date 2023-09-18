@@ -187,7 +187,7 @@ footer section {
   flex-direction: column;
   display: flex;
   flex-grow: 1;
-  flex-basis: 250px;
+  flex-basis: 226px;
   row-gap: 25px;
 }
 
@@ -259,7 +259,7 @@ section h4 {
   width: 100%;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1024px) {
   footer section {
     align-items: center;
   }
