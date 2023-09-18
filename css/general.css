@@ -3,7 +3,7 @@
 :root {
   /* GENERAL */
   --main-bg-color: #4c4f53;
-  --secondary-bg-color:#212529;
+  --secondary-bg-color: #212529;
   --main-text-color: antiquewhite;
   --secondary-text-color: #ae9a63;
   --text-h1-size: 30px;
@@ -21,15 +21,17 @@
   --btn-booking-hover: antiquewhite;
 }
 
-body{
+body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: "PT Serif"; 
+  font-family: "PT Serif";
   font-size: var(--text-body-size);
 }
 
-h1, h2, h3 { 
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -49,7 +51,7 @@ h3 {
 header {
   position: sticky;
   top: 0;
-  height: auto; 
+  height: auto;
   z-index: 10;
 }
 
@@ -65,8 +67,8 @@ header {
   background-color: var(--secondary-bg-color);
   padding: 10px 0;  */
 
-  /* position: fixed; Satte position fixed på headern så den är synlig när man skrollar, fick ta bort grid-column då man tydligen inte kan kombinera dessa */
-  /* top: 0;
+/* position: fixed; Satte position fixed på headern så den är synlig när man skrollar, fick ta bort grid-column då man tydligen inte kan kombinera dessa */
+/* top: 0;
   left: 0;
   right: 0;
   background-color: var(--secondary-bg-color);
@@ -78,10 +80,10 @@ header {
   z-index: 1000;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
-/* } */ 
+/* } */
 
 .headerlogo {
-  max-width: 240px; 
+  max-width: 240px;
 }
 
 /* header:hover{
@@ -114,7 +116,7 @@ a {
 
 a:hover {
   color: var(--main-text-color);
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 /* .btn-boka {
@@ -144,40 +146,110 @@ a:hover {
   text-transform: uppercase;
 }
 .btn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary { 
+.btn-primary {
   background-color: var(--btn-primary);
-  color: #FFF!important;
+  color: #fff !important;
 }
 
-.btn-primary:hover { 
+.btn-primary:hover {
   background-color: var(--btn-primary-hover);
-  color: #000000!important;
+  color: #000000 !important;
 }
 
-.btn-boka { 
+.btn-boka {
   background-color: var(--btn-booking);
-  font-size: 25px!important;
-  color: #FFF!important;
+  font-size: 25px !important;
+  color: #fff !important;
 }
 
-.btn-boka:hover { 
+.btn-boka:hover {
   background-color: var(--btn-booking-hover);
-  font-size: 25px!important;
-  color: #000000!important;
+  font-size: 25px !important;
+  color: #000000 !important;
 }
 /* END button */
 
 footer {
   grid-column: 1/-1;
-  min-height: 150px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  display: flex;
+  gap: 35px;
+  padding: 35px;
+  background-color: var(--secondary-bg-color);
+  font-size: 14px;
 }
 
-.footer-section {
-  margin: 10px;
-  border: 1px solid #333;
+footer section {
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 250px;
+  row-gap: 20px;
+}
+
+#googlemapspic img {
+  width: 100%;
+}
+
+#kontakt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background-color: #ae9a63;
+  font-size: 18px;
+}
+
+#social {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+section h4 {
+  font-size: 18px;
+}
+
+#nyhetsbrev {
+  display: flex;
+}
+
+.news-btn {
+  align-items: center;
+  background-color: #ae9a63;
+  border: none;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  justify-content: center;
+}
+
+.news-field {
+  border: 1px solid #d6d6d6;
+  color: #1a1a1d;
+  height: 36px;
+  min-width: 36px;
+  padding-left: 8px;
+  position: relative;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 959px) {
+  footer section {
+    align-items: center;
+  }
 }
