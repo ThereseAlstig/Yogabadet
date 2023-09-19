@@ -40,7 +40,7 @@
               </label>
               <ul class="menu">
                 <li><a href="yoga.meditation.html">Yoga och meditation</a></li>
-                <li><a href="spa.html">Spa</a></li>
+                <li><a href="spa.html" class="menuactive">Spa</a></li>
                 <li><a href="boende.html">Boende</a></li>
                 <li><a href="restaurang.html">Restaurang</a></li>
                 <li><a href="behandlingar.html">Behandlingar</a></li>
@@ -54,12 +54,13 @@
         </nav>
       </header>
 
-      <main>
-        <section id="mainpicture">
-          <img src="assets/pool2.jpeg" alt="restaurangen" />
-        </section>
+      <section id="mainpicture">
+        <img src="assets/pool2.jpeg" alt="restaurangen" />
+      </section>
+      <div class="image-text">Spa</div>
 
-        <section id="text-container">
+      <main>
+        <section class="text-container">
           <h1>Välkommen till Yogabadets spa</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
@@ -70,65 +71,140 @@
             explicabo eius porro repellat. Laborum voluptas commodi dolore qui
             excepturi.
           </p>
-        
+          <div class="btn-container">
+            <button class="btn-btn btn-läs-mer">Läs mer</button>
+            <button class="btn-btn">Boka</button>
+          </div>
         </section>
 
         <section class="box-1">
           <img src="assets/pool3.jpeg" alt="pool" />
-          <p class="text-img">Varma och kalla källor</p>
-          <!-- <button class="btn-img">Läs mer</button> -->
+          <p class="box-text">Varma och kalla källor</p>
         </section>
         <section class="box-2">
           <img src="assets/bastu.jpeg" alt="bastu" />
-          <p class="text-img">Bastu</p>
-          <!-- <button class="btn-img">Läs mer</button> -->
+          <p class="box-text">Bastu</p>
         </section>
         <section class="box-3">
           <img src="assets/vila.webp" alt="Vila och avkoppling" />
-          <p class="text-img">Vila och avkoppling</p>
-          <!-- <button class="btn-img">Läs mer</button> -->
+          <p class="box-text">Vila och avkoppling</p>
         </section>
         <section class="box-4">
           <img src="assets/utomhusbad1.jpeg" alt="Utomhuspool" />
-          <p class="text-img">Utomhusspa</p>
-          <!-- <button class="btn-img">Läs mer</button> -->
+          <p class="box-text">Utomhusspa</p>
         </section>
 
-        <section class="offer-text">
-          <h1>Populära erbjudanden</h1>
-        </section>
-
-        <section class="offer-1">
-          <div class="img-container">
-            <img src="assets/frukost.jpg" alt="" />
-          </div>
-          <div class="text-div">
-            <h1>Frukost och spa</h1>
-            <p>
-              Börja dagen med en god frukost på Yogabadet och varva sedan ner i
-              varma källor och njut av bastubad.
-            </p>
-            <button class="btn-img">Boka</button>
-          </div>
-        </section>
-        <section class="offer-2">
-          <div class="img-conatiner">
-            <img src="assets/late-night-spa.jpeg" alt="" />
-          </div>
-          <div class="text-div">
-            <h1>Late night- Kvällspa</h1>
-            <p>
-              Ta med dina vänner på middag och avkoppling på Yogabadet i månens
-              sken. Går att boka fredagar och lördagar.
-            </p>
-            <button class="btn-img">Boka</button>
-          </div>
-        </section>
+        <div class="offer-container">
+          <section class="offer-text">
+            <h2>Populära spapaket</h2>
+          </section>
+          <section class="offer-1">
+            <div class="offer-info">
+              <img src="assets/frukost.jpg" alt="frukost" />
+              <div class="info-div">
+                <h2>Frukost och spa</h2>
+                <!-- <p>
+                  Börja dagen med en god frukost på Yogabadet och varva sedan ner
+                  i varma källor och njut av bastubad. Går att boka alla dagar.
+                </p> -->
+                <button class="btn-btn">Boka</button>
+              </div>
+            </div>
+          </section>
+          <section class="offer-2">
+            <div class="offer-info">
+              <img src="assets/late-night-spa.jpeg" alt="" />
+              <div class="info-div">
+                <h2>Late night- Kvällspa</h2>
+                <!-- <p>
+                  Ta med dina vänner på middag och avkoppling på Yogabadet i
+                  månens sken. Går att boka fredagar och lördagar.
+                </p> -->
+                <button class="btn-btn">Boka</button>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
 
       <footer>
-        <div class="footer-section">Kontakt</div>
-        <div class="footer-section">Nyhetsbrev</div>
+        <section>
+          <div>
+            <div>
+              <h3>Hitta till oss</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laudantium, quas.
+              </p>
+            </div>
+            <div id="googlemapspic">
+              <a
+                href="https://www.google.com/maps/place/Tofta+Herrg%C3%A5rd+%2F+Tofta+Herrg%C3%A5rd+Konferens+AB/@57.8642317,11.7121355,14.63z/data=!4m9!3m8!1s0x46457d32ad6a76e9:0x7bbf7c3c5ce0af77!5m2!4m1!1i2!8m2!3d57.8650174!4d11.7098575!16s%2Fg%2F11dyh_r_9!5m1!1e4?entry=ttu"
+                target="_blank"
+                ><img
+                  src="pictures/karta.png"
+                  alt="karta från google maps på yogabadet"
+              /></a>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                corporis?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3>Information</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo
+              autem quidem quod. Consectetur neque, iusto tempore architecto
+              fugiat pariatur ipsum nihil quaerat, a maxime odio deserunt. Cum,
+              laudantium soluta praesentium, alias minus expedita illo
+              aspernatur, excepturi iusto ipsa velit quia harum tempore
+              voluptatum? Incidunt accusantium porro magni soluta velit.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3>Om Yogabadet</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              officia temporibus eius fugiat inventore animi accusamus autem eum
+              veritatis ut, odit aut ad dolorem adipisci magnam reiciendis
+              reprehenderit repudiandae quia incidunt sed architecto, veniam
+              facilis distinctio. Quasi, libero quidem. Magnam necessitatibus et
+              nam omnis unde asperiores nisi ab ipsam! Optio.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div id="kontakt">
+            <a href="#" class="btn-contact">Kontakta oss!</a>
+          </div>
+          <div id="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-square-facebook fa-2xl"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/sverigesroligastebarn/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <i class="fa-brands fa-tiktok fa-2xl"></i
+            ></a>
+          </div>
+          <h4>Yogabadets nyhetsbrev</h4>
+          <div id="nyhetsbrev">
+            <input type="email" placeholder="Email" class="field-news" />
+            <a href="#" class="btn-news">skriv upp mig!</a>
+          </div>
+        </section>
+        <div class="copyright">© 2023 Yogabadet</div>
       </footer>
     </div>
   </body>
