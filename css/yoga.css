@@ -1,8 +1,13 @@
-body{
+/*body{
     width: 100%;
     margin: 0;
-}
+}*/
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 #gridcontainer{
     display: grid;
@@ -12,7 +17,12 @@ body{
     margin: 50px;
     position: relative;
 }
-
+#Mainpicture{
+    opacity: 0.4;
+    height: auto;
+    width: 100%;
+    
+}
 
 aside{
     text-align: center;
@@ -20,16 +30,16 @@ aside{
     justify-content: flex-start;
     line-height: 1.8;
     letter-spacing: 0.2;
-    
+   
 }
 
 button{
-  background-color: #ae9a63;
-  color: #212529;
+  background-color: var(--secondary-text-color);
+  color: var(--secondary-bg-color);
   width: 120px;
   height: 50px;
   color: var(--main-text-color);
-  font-family: 'Roboto', sans-serif;
+ 
   font-size: 12px;
   text-transform: uppercase;
   padding: 10px 25px;
@@ -43,8 +53,8 @@ button{
  }
 
  button:hover{
-    background-color: antiquewhite;
-    color: #212529;
+    background-color: var(--btn-primary-hover);
+    color: var(--secondary-bg-color);
  }
   
 #bokapass {
@@ -115,7 +125,7 @@ cursor: pointer;
 }
 
 table, th, td{
-    border: 1px solid #ae9a63;
+    border: 2px solid #ae9a63;
     padding: 0.2%;
 }
 
@@ -188,7 +198,7 @@ grid-row: 3/4;
     text-align: center;    
     margin: 0 auto 0 auto;
     letter-spacing: 2.5px;
-   
+   border-bottom: 1px solid var(--main-text-color);
     
 }
 
@@ -248,13 +258,14 @@ aside {
 
     aside{
         grid-column: 3/11;
+        
       
     }
     #bokapass {
         grid-column: 11/12;
         grid-row: 1/2;
         position: absolute;
-        top: -34px; 
+        top: -54px; 
         left: -199px;
       
      }

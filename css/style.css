@@ -13,12 +13,12 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-header,
+/* header,
 section,
 main,
 footer {
   border: 1px solid #333;
-}
+} */
 
 .image-text {
   position: absolute;
@@ -63,7 +63,7 @@ main{
   grid-column: 1/-1; 
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 #description img{
@@ -76,7 +76,7 @@ align-items: center;
   font-size: 99%;
   padding: 10px;
 
-  margin-right: 80px;
+ margin: 20px;
   
 
 }
