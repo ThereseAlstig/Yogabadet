@@ -10,36 +10,156 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-/* header,
-section,
-main,
-footer {
-  border: 1px solid #333;
-} */
-
 main {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-#mainpicture{
+#mainpicture {
   grid-column: 1/-1;
   text-align: center;
+  background-color: var(--secondary-bg-color);
 }
 
-#mainpicture img{
+#mainpicture img {
   width: 100%;
 }
 
-#offer1 {
-  grid-column: 2/-2;
+#mainpicture p,
+#mainpicture a {
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-#offer2 {
-  grid-column: 2/-2;
+#mainpicture a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-primary);
+  padding: 10px;
+  font-size: 18px;
 }
 
-#offer3 {
-  grid-column: 2/-2;
+#mainpicture a:hover {
+  background-color: var(--btn-booking-hover);
+  color: var(--secondary-bg-color);
+}
+
+.btn-bord {
+  align-items: center;
+  background-color: var(--btn-primary);
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+#offer1,
+#offer2,
+#offer3,
+#offer4,
+#offer5,
+#offer6,
+#offer7,
+#offer8 {
+  /* border: 1px solid #333;
+  min-height: 150px; */
+  margin: 50px;
+}
+
+#offer1,
+#offer4 {
+  grid-column: 1/5;
+}
+
+#offer2,
+#offer5 {
+  grid-column: 5/-5;
+}
+
+#offer3,
+#offer6 {
+  grid-column: -5/-1;
+}
+#offer7 {
+  grid-column: 2/-6;
+}
+#offer8 {
+  grid-column: -6/-2;
+}
+
+#offer1 img,
+#offer2 img,
+#offer3 img,
+#offer4 img,
+#offer5 img,
+#offer6 img,
+#offer7 img,
+#offer8 img {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  #offer1,
+  #offer3,
+  #offer5
+  {
+    grid-column: 1/7;
+  }
+
+  #offer2,
+  #offer4,
+  #offer6
+  {
+    grid-column: 7/-1;
+  }
+
+  #offer7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+  }
+
+  #offer8 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #offer1,
+  #offer2,
+  #offer3,
+  #offer4,
+  #offer5,
+  #offer6,
+  #offer7 {
+    grid-column: 1/-1;
+    margin-bottom: 0px;
+  }
+
+  #offer7 {
+    margin-top: 50px;
+  }
+
+  #offer8 {
+    grid-column: 1/-1;
+  }
+
+  #offer8 {
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 50px;
+    margin-top: 5px;
+  }
 }
