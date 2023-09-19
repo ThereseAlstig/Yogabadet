@@ -2,6 +2,7 @@ main {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     gap: 20px;
 }
 
@@ -26,7 +27,7 @@ color: white;
 
 p{
 max-width: 800px;
-color: white;
+color: var(--main-text-color);
 }
 
  img {
@@ -54,13 +55,22 @@ border: none;
 border: none;
       }
 
+      .offerbackground{
+grid-column: -13/ -1;      
+width: auto;
+}
+
+.yogabild{
+  position: relative;
+  left: 300px;
+
+}
+
       .imgbehandlingar{
         width: 100%;
         height:auto;
       }
-.pbox{
-  font-size: 16px;
-}
+
       a:hover {
         color: white; 
         transition: all 0.3s ease; 
@@ -95,6 +105,25 @@ border: none;
     color: #212529;
 } 
 
+/*erbjudanden*/
+
+.offerbackground {
+    padding: 50px 0px 50px 0px;
+    background-color: #ae9a63;
+  } 
+
+    .offer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .text{
+   position: relative;
+   left:5px;
+  }
+
+
 @media (max-width: 960px) {
  /* main {
     grid-column: 1/-1;
@@ -124,10 +153,14 @@ border: none;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-        
+         
+         }
+          .offer {
+            display: flex;
+            flex-wrap: wrap;
+            padding:5px;
+          }
       }
       #text-container{
         padding:30px;
       }
-
-}
