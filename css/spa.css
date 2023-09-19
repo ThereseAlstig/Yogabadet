@@ -66,8 +66,6 @@ main {
     background-color: var( --secondary-bg-color);
     margin-bottom: 100px;
    
-
-
 }
 
 .text-container p {
@@ -166,7 +164,7 @@ main {
 }
 
 
-.col {
+.offer-container {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -186,7 +184,7 @@ main {
 
 } 
 
-.div-container {
+.offer-info{
     display: flex;
     flex-direction: column;
     gap:15px;
@@ -195,14 +193,47 @@ main {
     margin-bottom: 40px;
     flex-wrap: wrap;
     line-height: 20px;
+    position: relative;
+
 }
 
-.div-container p {
+.offer-info img {
+    opacity: 0.7;    
+    cursor: pointer;
+
+}
+
+.offer-info p {
     margin-right: 50px;
+
+
 }
 
+.info-div {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    font-family: 'PT serif';
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+
+.info-div button {
+    transition: transform 0.4s;
+
+}
+
+.info-div button:hover {
+    transform: scale(1.07);
+}
 h2 {
     margin-top: 18px; 
+
 }
 
 
@@ -318,14 +349,9 @@ h2 {
        
     }
 
-    .div-container h2 {
+    .offer-info h2 {
         font-size: 20px;
     }
 
-
-
-
-
-    
 
 }
