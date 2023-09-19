@@ -136,8 +136,17 @@ footer section {
   row-gap: 25px;
 }
 
+footer section p {
+  max-width: 300px;
+}
+
+#googlemapspic {
+  display: flex;
+  justify-content: start;
+}
+
 #googlemapspic img {
-  width: 100%;
+  max-width: 290px;
 }
 
 #kontakt a, #nyhetsbrev a {
@@ -204,8 +213,18 @@ section h4 {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   footer section {
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+
+  #googlemapspic {
+    justify-content: center;
   }
 }
