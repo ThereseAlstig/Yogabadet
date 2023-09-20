@@ -117,8 +117,8 @@ main {
 @media (max-width: 959px) {
   
   .image-text {
-    top: 34vw;
-    font-size: 7vw;
+    top: 34vw; 
+    font-size: 7vw;    
 }
   
   #offer1,
