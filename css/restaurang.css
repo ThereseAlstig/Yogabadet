@@ -12,7 +12,7 @@
 
 .image-text {
   position: absolute;
-  top: 350px; 
+  top: 22vw; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 1;
@@ -20,7 +20,7 @@
   font-family: "PT Serif";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   padding: 10px 40px; 
-  font-size: 45px; 
+  font-size: 6vw; 
   text-align: center; 
 }
 
@@ -117,8 +117,8 @@ main {
 @media (max-width: 959px) {
   
   .image-text {
-    top: 200px; 
-    font-size: 6vw;    
+    top: 34vw; 
+    font-size: 7vw;    
 }
   
   #offer1,
