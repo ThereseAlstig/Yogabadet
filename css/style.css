@@ -13,13 +13,6 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-/* header,
-section,
-main,
-footer {
-  border: 1px solid #333;
-} */
-
 .image-text {
   position: absolute;
   top: 350px; 
@@ -27,7 +20,7 @@ footer {
   transform: translate(-50%, -50%); 
   z-index: 1;
   color: white; 
-  font-family: "PT+Serif";
+  font-family: "PT Serif";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   padding: 10px 40px; 
   font-size: 45px; 
@@ -78,7 +71,6 @@ main{
 
  margin: 20px;
   
-
 }
 
 #offer1,
@@ -87,10 +79,6 @@ main{
 #offer4,
 #offer5,
 #offer6 {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; */
   padding: 60px;
   text-align: center;
 }
@@ -166,12 +154,8 @@ width: 100%;
 
   #description{
     flex-wrap: wrap;
-    text-align: center;
-   
+    text-align: center; 
   }
-  
-  
-
   
   #offer1 {
     grid-column: 1/13;
@@ -204,12 +188,11 @@ width: 100%;
     transform: translate(-50%, -50%); 
     z-index: 1;
     color: white; 
-    font-family: "PT+Serif";
+    font-family: "PT Serif";
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     padding: 10px 40px; 
     font-size: 25px; 
     text-align: center; 
   }
-
 
   }

@@ -16,7 +16,7 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 1;
-  color: white; 
+  color: var(--main-text-color); 
   font-family: "PT Serif";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   padding: 10px 40px; 
@@ -65,7 +65,7 @@ main {
   align-items: center;
   background-color: var(--btn-primary);
   border: none;
-  color: #fff;
+  color: var(--main-text-color);
   display: flex;
   justify-content: center;
   width: 150px;
@@ -79,8 +79,6 @@ main {
 #offer6,
 #offer7,
 #offer8 {
-  /* border: 1px solid #333;
-  min-height: 150px; */
   margin: 50px;
 }
 
@@ -137,18 +135,19 @@ main {
     grid-column: 7/-1;
   }
 
-  #offer7 {
+  #offer7,
+  #offer8 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  #offer7 {
     margin: 0px 50px;
   }
 
   #offer8 {
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 50px 0px;
   }
 }
