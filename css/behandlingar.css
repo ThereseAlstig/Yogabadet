@@ -22,7 +22,7 @@
     font-family: 'PT serif';
     text-align: center;
     background-color: #212429;
-color: white;
+color: (--main-text-color);
 }
 
 p{
@@ -101,7 +101,7 @@ width: auto;
 
 .btn-img:hover {
   color:white;
-  background-color: antiquewhite;
+  background-color: white;
     color: #212529;
 } 
 
@@ -119,6 +119,9 @@ width: auto;
       justify-content: center;
       align-items:center;
       align-content: center;
+    }
+    .yogaphoto{
+      padding-right: 10px;
     }
 
 
