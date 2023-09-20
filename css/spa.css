@@ -3,14 +3,6 @@
     margin: 0;
     padding: 0;
 }
-  
-/* #container {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-} */
-
 
 
 .bgdark {
@@ -90,6 +82,13 @@ main {
     background-color: var(--btn-primary); 
     font-family: 'Roboto';
     cursor: pointer;
+
+}
+
+.btn-spa:hover {
+    background-color: var(--btn-booking-hover);
+    color: var(--secondary-bg-color);
+    border: 1px solid var(--btn-booking-hover);
 }
 
 .btn-läs-mer {
@@ -213,8 +212,6 @@ main {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    /* display: flex;
-    flex-direction: column; */
     color: white;
     padding: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -225,14 +222,7 @@ main {
     font-family: "PT serif";
     font-weight: 100;
 }
-.info-div button {
-    transition: transform 0.4s;
 
-}
-
-.info-div button:hover {
-    transform: scale(1.07);
-}
 h2 {
     margin-top: 18px; 
 
@@ -257,18 +247,7 @@ h2 {
 
 
 
-
-@media screen and (max-width: 1199px) and (min-width: 960px) {
-    .box-text {
-        font-size: 20px;
-    
-
-    }
- 
-
-}
-
-@media screen and (max-width: 959px) and (min-width: 769px) {
+@media (max-width: 960px)  {
  
     
     #text-container {
@@ -301,7 +280,7 @@ h2 {
     
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 767px)  {
 
     .image-text {
         top: 200px; 
@@ -344,7 +323,7 @@ h2 {
 
     .offer-1 {
         grid-column: 2/12;
-      }
+    }
       
     .offer-2 {
         grid-column: 2/12;
@@ -359,9 +338,6 @@ h2 {
         position: absolute;
         bottom: 5px;
         left: 5px;
-        /* display: flex;
-        flex-direction: column; */
-
         color: white;
         padding: 10px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
