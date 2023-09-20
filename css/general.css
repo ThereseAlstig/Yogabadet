@@ -4,7 +4,7 @@
   /* GENERAL */
   --main-bg-color: #4c4f53;
   --secondary-bg-color: #212529;
-  --main-text-color: antiquewhite;
+  --main-text-color: rgb(225, 225, 225);
   --secondary-text-color: #ae9a63;
   --text-h1-size: 30px;
   --text-h2-size: 25px;
@@ -16,9 +16,9 @@
   --menulink-primary-hover: #whitesmoke;
   /* BUTTONS */
   --btn-primary: #ae9a63;
-  --btn-primary-hover: antiquewhite;
+  --btn-primary-hover: rgb(225, 225, 225);
   --btn-booking: #ae9a63;
-  --btn-booking-hover: antiquewhite;
+  --btn-booking-hover: rgb(225, 225, 225);
 }
 
 body {

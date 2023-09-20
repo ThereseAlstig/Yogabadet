@@ -20,6 +20,9 @@
     position: relative;
     
 }
+aside{
+    color: var(--main-text-color);
+}
 .topcontent p{
     position: absolute;
     top: 350px;
@@ -29,9 +32,10 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
     font-size: 45px; 
     z-index: 1;
+    color: var(--main-text-color);
 }
 
-aside{
+aside, p{
     text-align: center;
     grid-column: 4/10;
     justify-content: flex-start;
@@ -42,8 +46,10 @@ aside{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    
    
 }
+
 
 button{
     background-color: var(--secondary-text-color);
