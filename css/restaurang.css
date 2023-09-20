@@ -10,6 +10,20 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+.image-text {
+  position: absolute;
+  top: 350px; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  color: white; 
+  font-family: "PT Serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  padding: 10px 40px; 
+  font-size: 45px; 
+  text-align: center; 
+}
+
 main {
   grid-column: 1/-1;
   display: grid;
@@ -102,7 +116,13 @@ main {
   width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
+  
+  .image-text {
+    top: 200px; 
+    font-size: 6vw;    
+}
+  
   #offer1,
   #offer3,
   #offer5
