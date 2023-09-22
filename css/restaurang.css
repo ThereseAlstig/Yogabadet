@@ -12,16 +12,16 @@
 
 .image-text {
   position: absolute;
-  top: 23vw; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 23vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
-  color: var(--main-text-color); 
+  color: var(--main-text-color);
   font-family: "PT Serif";
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  padding: 10px 40px; 
-  font-size: 6vw; 
-  text-align: center; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px 40px;
+  font-size: 6vw;
+  text-align: center;
 }
 
 main {
@@ -82,6 +82,17 @@ main {
   margin: 50px;
 }
 
+#offer1:hover,
+#offer2:hover,
+#offer3:hover,
+#offer4:hover,
+#offer5:hover,
+#offer6:hover,
+#offerpicknick:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 #offer1,
 #offer4 {
   grid-column: 1/5;
@@ -103,6 +114,11 @@ main {
   grid-column: -6/-2;
 }
 
+#offerpicknick {
+  grid-column: 2/-2;
+  display: flex;
+}
+
 #offer1 img,
 #offer2 img,
 #offer3 img,
@@ -115,23 +131,20 @@ main {
 }
 
 @media (max-width: 959px) {
-  
   .image-text {
-    top: 33vw; 
-    font-size: 6vw;    
-}
-  
+    top: 33vw;
+    font-size: 6vw;
+  }
+
   #offer1,
   #offer3,
-  #offer5
-  {
+  #offer5 {
     grid-column: 1/7;
   }
 
   #offer2,
   #offer4,
-  #offer6
-  {
+  #offer6 {
     grid-column: 7/-1;
   }
 
@@ -141,7 +154,7 @@ main {
     justify-content: center;
     align-items: center;
   }
-  
+
   #offer7 {
     margin: 0px 50px;
   }
@@ -150,10 +163,14 @@ main {
     flex-direction: column;
     margin: 50px 0px;
   }
+
+  #offerpicknick {
+    grid-column: 1/-1;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-
   #offer1,
   #offer2,
   #offer3,
@@ -166,19 +183,23 @@ main {
   }
 
   #offer7 {
+    margin: 0px;
     margin-top: 50px;
   }
 
   #offer8 {
     grid-column: 1/-1;
-  }
-
-  #offer8 {
     flex-direction: column;
     display: flex;
     justify-content: start;
     align-items: start;
-    margin: 50px;
     margin-top: 5px;
+  }
+
+  #offerpicknick {
+    grid-column: 1/-1;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 0px;
   }
 }
